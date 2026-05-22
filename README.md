@@ -101,3 +101,22 @@ Manual install needs:
 ```bash
 bun run dev
 ```
+
+## Troubleshooting
+
+**Diagrams not rendering?**
+- Make sure the plugin is enabled in Obsidian settings
+- Try disabling other Mermaid plugins — they may conflict
+- In Live Preview, move the cursor outside the code block
+
+**SVG output looks wrong?**
+- Check that `assets/` directory is properly included in your vault
+- Some themes may affect SVG colors — try switching themes
+
+**Build errors?**
+- Ensure you have `bun` installed: `bun --version`
+- Run `bun install` first, then `bun run build`
+
+**Manual install not working?**
+- Verify all three files are present: `manifest.json`, `main.js`, `styles.css`
+- The plugin folder name must match: `beautiful-mermaid-renderer`
