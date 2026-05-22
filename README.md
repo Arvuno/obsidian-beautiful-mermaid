@@ -51,6 +51,27 @@ Aliases are supported:
 - `beautiful-mermaid`
 - `bmmd`
 
+## Architecture
+
+```mermaid
+graph TB
+  subgraph Obsidian
+    A[Markdown Editor] --> B[Code Block Parser]
+    B --> C[Beautiful Mermaid Renderer Plugin]
+  end
+  subgraph beautiful-mermaid
+    D[SVG Generator] --> E[Theme Variable Injector]
+    E --> F[Styled SVG Output]
+  end
+  C --> D
+  F --> G[Rendered Diagram in Editor]
+```
+
+**Components:**
+- `main.js` — Plugin entry point, registers code block renderer
+- `styles.css` — Obsidian theme-aware styling for SVG containers
+- `manifest.json` — Plugin metadata and version
+
 ## Build
 
 ```bash
