@@ -31,6 +31,28 @@ Inspired by Craft's [Beautiful Mermaid gallery](https://agents.craft.do/mermaid)
   </tr>
 </table>
 
+---
+
+## Installation
+
+### Community Plugin (recommended)
+
+1. Open Obsidian
+2. Go to **Settings → Community Plugins → Browse**
+3. Search for "Beautiful Mermaid"
+4. Click **Install**, then **Enable**
+
+### Manual Installation
+
+```bash
+git clone https://github.com/qiaoborui/obsidian-beautiful-mermaid.git
+cd obsidian-beautiful-mermaid
+bun install && bun run build
+cp -r dist ~/.obsidian/plugins/obsidian-beautiful-mermaid/
+```
+
+Enable in **Settings → Community Plugins**.
+
 ## Usage
 
 Use a `mermaid` code block:
