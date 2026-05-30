@@ -111,3 +111,6 @@ PRs welcome!
 2. Enable the plugin in Obsidian Settings > Community Plugins.
 
 Or use the Obsidian Plugin Manager.
+
+<!-- Contributor: Arvuno - documentation update -->
+
