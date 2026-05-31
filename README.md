@@ -101,3 +101,7 @@ Manual install needs:
 ```bash
 bun run dev
 ```
+
+## Contributing
+
+Contributions are welcome!
